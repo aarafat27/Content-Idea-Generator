@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Content Ideas Generator</title>
+    <style>
+      /* Add some styling to the input and button */
+      input, button {
+        padding: 10px;
+        font-size: 16px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      header {
+        font-size: 3rem; /* Set the font size to 3 times the default size */
+        text-align: center; /* Center the text */
+        padding: 0.5rem; /* Add some padding around the text */
+        background-color: #88E7F3; /* Set a background color */
+	  max-width: 500px; /* Set the maximum width of the header */
+        margin: 0 auto; /* Center the header horizontally */
+      }
+
+      input {
+        width: 300px;
+        text-transform: uppercase;
+      }
+
+ button {
+        background-color: #1DB2F8;
+        color: white;
+        padding: 1rem 2rem; /* Add some padding */
+        border: none; /* Remove the default border */
+        border-radius: 0.5rem; /* Add rounded corners */
+        transition: background-color 0.3s ease; /* Add a smooth transition effect */
+      }
+      /* Style for the button when hovered */
+      button:hover {
+        background-color: #13F0B1; /* Change the background color */
+      }
+      /* Style the container to center everything */
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      /* Add some styling to the result */
+      #result {
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+<header>Content Idea Generator</header>
+    <div class="container">
+      <label for="topic"><h2>Enter a topic:</h2></label>
+      <input type="text" id="topic" placeholder="e.g. AI, Metaverse">
+      <button id="generate-btn">Generate</button>
+      <div id="result"></div>
+    </div>
+    <script>
+      // Add an event listener to the button
+      document.getElementById("generate-btn").addEventListener("click", function() {
+        // Get the input value
+        const topic = document.getElementById("topic").value;
+        // Generate a random content idea based on the input value
+        const ideas = [
+          `The history of ${topic}: from ancient times to modern day`,
+          `The science behind ${topic}: why it's good for you`,
+          `Exploring the different types of ${topic} around the world`,
+          `The future of ${topic}: trends to watch out for`,
+          `Interview with a ${topic} expert: insights and tips`,
+	    `10 ways to incorporate ${topic} into your daily routine`,
+	    `The top ${topic} brands to try out`,
+	    `Why ${topic} is the ultimate source of inspiration for artists`,
+	    `The social and cultural significance of ${topic}`,
+	    `How to choose the best ${topic} for your needs`,
+	    `The environmental impact of ${topic} production and consumption`,
+	    `The most iconic moments in the history of ${topic}`,
+	    `The psychological effects of ${topic} and how they impact your mood`,
+	    `The unique flavors and aromas of ${topic}: a guide to the sensory experience`,
+	    `How ${topic} has evolved over time and its current state`,
+	    `The cultural significance of ${topic} in different parts of the world`,
+	    `10 ${topic}-related books you need to read`,
+	    `The future of ${topic}: where is it headed and what can we expect?`,
+	    `The connection between ${topic} and spirituality`,
+	    `How to grow and cultivate your own ${topic} at home`,
+	    `The role of ${topic} in promoting sustainability and ethical practices`,
+	    `Exploring the therapeutic benefits of ${topic} and how it can improve your well-being`,
+	    `Unveiling the Mysteries of ${topic}: A Comprehensive Guide`,
+    	    `The Ultimate Beginner's Guide to ${topic}`,
+	    `Mastering the Art of ${topic}: Tips and Techniques`,
+	    `${topic} Demystified: Common Myths and Misconceptions`,
+	    `The Power of ${topic}: How It Can Transform Your Life`,
+	    `The Surprising Health Benefits of ${topic}`,
+	    `The Evolution of ${topic}: Past, Present, and Future`,
+	    `The Intersection of ${topic} and Technology: Innovations and Breakthroughs`,
+	    `Unlocking Creativity with ${topic}: Inspiring Ideas and Projects`,
+	    `From Novice to Expert: Navigating the Journey of ${topic}`,
+	    `Behind the Scenes: Exploring the ${topic} Industry`,
+	    `The Role of ${topic} in Shaping Society and Culture`,
+	    `Exploring the Global Impact of ${topic}`,
+	    `The Mind-Body Connection: ${topic} and Mental Well-being`,
+	    `Sustainability and ${topic}: Building a Greener Future`
+        ];
+        const randomIndex = Math.floor(Math.random() * ideas.length);
+        const idea = ideas[randomIndex];
+        // Display the content idea in the result element
+        document.getElementById("result").textContent = idea;
+      });
+    </script>
+  </body>
+</html>
