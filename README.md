@@ -13,4 +13,5 @@ To use the Content Idea Generator, simply follow these steps:
 * Enter your desired topic in the input field provided.
 * Click the "Generate" button.
 * Voila! A compelling blog idea related to your topic will appear in the result section.
+
 Feel free to use the generated blog ideas as inspiration for your next writing project, content calendar, or brainstorming session. With the wide range of suggestions available, you're sure to find something that piques your interest and resonates with your audience.
